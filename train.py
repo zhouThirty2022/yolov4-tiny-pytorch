@@ -98,7 +98,7 @@ if __name__ == "__main__":
     #      可以设置mosaic=True，直接随机初始化参数开始训练，但得到的效果仍然不如有预训练的情况。（像COCO这样的大数据集可以这样做）
     #   2、了解imagenet数据集，首先训练分类模型，获得网络的主干部分权值，分类模型的 主干部分 和该模型通用，基于此进行训练。
     # ----------------------------------------------------------------------------------------------------------------------------#
-    model_path = '/content/gdrive/MyDrive/Models/yolov4-tiny-pytorch/logs/ep108-loss0.062-val_loss0.056.pth'
+    model_path = '/content/gdrive/MyDrive/Models/yolov4-tiny-pytorch/logs/last_epoch_weights.pth'
     # ------------------------------------------------------#
     #   input_shape     输入的shape大小，一定要是32的倍数
     # ------------------------------------------------------#
@@ -188,7 +188,7 @@ if __name__ == "__main__":
     #   Freeze_batch_size   模型冻结训练的batch_size
     #                       (当Freeze_Train=False时失效)
     # ------------------------------------------------------------------#
-    Init_Epoch = 108
+    Init_Epoch = where?
     Freeze_Epoch = 50
     Freeze_batch_size = 16
     # ------------------------------------------------------------------#
